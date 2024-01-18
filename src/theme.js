@@ -2,6 +2,13 @@ import { createTheme } from "@mui/material";
 
 
 export const theme = createTheme({
+    default: {
+        body: {
+            margin: '0',
+            padding: '0',
+            boxSizing: 'border-box',
+        }
+    },
     palette:{
         primary: {
             main:"#1760a5",
@@ -13,5 +20,8 @@ export const theme = createTheme({
         otherColor: {
             main: "#999"
         }
+    },
+    shape: {
+        borderRadius: '5px',
     }
 })
